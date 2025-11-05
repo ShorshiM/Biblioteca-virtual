@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="nav-bar">
+        <div class="logo">
+          <a href="https://tecnologicosucre.edu.ec">
+            <img
+              src="http://181.211.10.246/pluginfile.php/1/theme_klass/logo/1701456290/LogoSucreUniversitarioM.png"
+              alt="ISU-SUCRE"
+            />
+          </a>
+        </div>
+        <div class="session">
+          <h2>Biblioteca - SUCRE</h2>
+          <div id="session-user">
+            <a href="login.html"
+              ><span
+                ><i class="fa-solid fa-user"></i> Ingresar a su cuenta</span
+              ></a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- navegation -->
+    <nav class="nav">
+      <div class="nav-container">
+        <ul>
+          <li>
+            <a class="a-2" href="#ingreso-biblioteca"
+              >Ingreso a la biblioteca</a
+            >
+          </li>
+          <li><a class="a-1" href="#repositorio">Repositorio</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- welcome -->
+    <section class="welcome-container">
+      <div class="image-instituto">
+        <img src="assets/imgs/img-hero.png" alt="Imagen - Biblioteca SUCRE" />
+      </div>
+      <div class="welcome-text" id="ingreso-biblioteca">
+        <div class="background-text">
+          <h1>Nuestro compromiso</h1>
+          <p>
+            El Sistema Bibliotecario del Instituto Superior Universitario SUCRE
+            tiene como finalidad, contribuir al alcance de la excelencia
+            académica de la institución desarrollando soluciones integrales para
+            la comodidad a nuestros usuarios de la comunidad SUCRE.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- hero -->
+    <section class="hero">
+      <div class="title-search-book">
+        <h2>Buscar Libros</h2>
+      </div>
+      <div class="hero-search">
+        <div class="search-carrera">
+          <select id="search-for-carrera">
+            <option value="1">Contabilidad</option>
+            <option value="2">Desarrollo de Software</option>
+            <option value="3">Desarrollo infantil integral</option>
+            <option value="4">Electricidad</option>
+            <option value="5">Electromecánica</option>
+            <option value="6">Electrónica</option>
+            <option value="7">Fotografía</option>
+            <option value="8">Gestión Ambiental</option>
+            <option value="9">Marketing</option>
+            <option value="10">Procesamiento de Alimentos</option>
+            <option value="11">Producción Audiovisual</option>
+            <option value="12">Física</option>
+            <option value="13">Lenguaje</option>
+            <option value="14">Matemática</option>
+            <option value="15">Ciencias Naturales</option>
+            <option value="16">Ciencias Sociales</option>
+          </select>
+        </div>
+        <div class="search-categoria">
+          <select id="search-for-categoria">
+            <option value="1">Generalidades</option>
+            <option value="2">Filosofía</option>
+            <option value="3">Religión</option>
+            <option value="4">Ciencias Sociales</option>
+            <option value="5">Filología</option>
+            <option value="6">Ciencias Naturales</option>
+            <option value="7">Técnica y Ciencias Prácticas</option>
+            <option value="8">Arte</option>
+            <option value="9">Literatura e Historia</option>
+          </select>
+        </div>
+        <div class="search-title">
+          <input type="text" placeholder="Ingrese el Título" name="titulo" />
+        </div>
+        <div class="search-author">
+          <input type="text" placeholder="Ingrese el Autor" name="autor" />
+        </div>
+        <button>Buscar</button>
+      </div>
+      <div class="hero-container"></div>
+      <div class="alert-search" style="display: none">
+        <p style="text-align: center; font-size: 30px"></p>
+      </div>
+      <div class="controller">
+        <i class="fas fa-chevron-left" id="left"></i>
+        <i class="fas fa-chevron-right" id="right"></i>
+      </div>
+    </section>
+
+    <!-- library -->
+    <section class="library">
+      <div class="library-title">
+        <h2>Libros de Carrera</h2>
+      </div>
+      <div class="library-container" id="repositorio"></div>
+    </section>
+
+    <!-- basic-library -->
+    <section class="library-basic">
+      <div class="library-title">
+        <h2>Libros de Ciencias Básicas</h2>
+      </div>
+      <div class="library-container-basic" id="repositorio-basic"></div>
+    </section>
+
+    <!-- footer -->
+    <footer class="container-footer">
+      <div class="first-footer">
+        <div class="img">
+          <a href="http://181.211.10.246/?redirect=0">
+            <img
+              src="http://181.211.10.246/pluginfile.php/1/theme_klass/footerlogo/1701456290/LogoSucreUniversitarioC.png"
+              alt="Logo-Instituto SUCRE"
+            />
+          </a>
+        </div>
+        <div class="frase">
+          <p>
+            “La educación superior es el factor determinante que transforma a
+            los seres humanos, logrando cambios fundamentales para convivir en
+            una sociedad más justa, sustentable y equitativa”
+          </p>
+        </div>
+        <div class="rector">
+          <p><strong>Ing. Santiago Illescas Correa, PhD. - RECTOR</strong></p>
+        </div>
+      </div>
+      <div class="second-footer">
+        <div class="box-info">
+          <h2>INFORMACIÓN</h2>
+        </div>
+        <div class="info-links">
+          <a href="http://www.tecnologicosucre.edu.ec/page/"
+            >SUCRE Instituto Superior Universitario</a
+          >
+          <br />
+          <a
+            href="http://tecnologicosucre.edu.ec/academico/itssu/loginalumnado.php"
+            >SAGA SUCRE - Estudiante</a
+          >
+        </div>
+      </div>
+      <div class="third-footer">
+        <div class="contact-footer">
+          <h2>CONTÁCTANOS</h2>
+        </div>
+        <div class="info-contact">
+          <p>
+            Campus Norte (Matriz): Av. 10 de Agosto N26-27 y Luis Mosquera
+            Narváez | Campus Sur: Av. Teodoro Gómez de la Torre S14 - 72 y
+            Joaquín Gutierrez
+          </p>
+          <p><i class="fa-solid fa-phone"></i> Teléfono: 02 2547-356</p>
+          <p>
+            <i class="fa-solid fa-envelope"></i> E-Mail:
+            <a href="#">secretaria@tecnologicosucre.edu.ec</a>
+          </p>
+        </div>
+      </div>
+      <div class="fourth-footer">
+        <div class="redes-sociales">
+          <h2>REDES SOCIALES</h2>
+        </div>
+        <div class="icon-links">
+          <div class="facebook">
+            <a href="https://www.facebook.com/SUCREInstitutooficial/"
+              ><i
+                class="fa-brands fa-square-facebook"
+                style="color: #74c0fc"
+              ></i
+            ></a>
+          </div>
+          <div class="twitter">
+            <a href="https://twitter.com/SUCREInstituto?lang=es"
+              ><i class="fa-brands fa-square-twitter" style="color: #0a5085"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/information_user.js"></script>
+    <script src="assets/js/import_controller.js"></script>
+    <script src="assets/js/controller_index.js"></script>
+  </body>
+</html>

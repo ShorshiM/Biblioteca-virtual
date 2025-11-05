@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/login.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="container-img-logo">
+        <img
+          src="./assets/imgs/img-library-login.png"
+          alt="SUCRE Instituto Superior Universitario"
+          title="Biblioteca - SUCRE Instituto Superior Universitario"
+        />
+        <h2>SUCRE - INSTITUTO SUPERIOR UNIVERSITARIO</h2>
+        <p class="p-1">
+          La Biblioteca del Instituto Superior Universitario SUCRE se realizó
+          para facilitar la parte investigativa a los usuarios del SUCRE,
+          ampliando el campo al aprendizaje autónomo. Se debe tomar en cuenta,
+          que la Biblioteca del Instituto se realizó en base a enlaces de acceso
+          libre a textos que se encuentran en la Internet.
+        </p>
+        <p class="p-2">
+          Recuerde que el usuario es su numero de <strong>cédula</strong>.
+        </p>
+      </div>
+      <div class="container-login">
+        <img
+          src="https://scontent.fuio1-1.fna.fbcdn.net/v/t39.30808-6/383209179_710430164457990_3789631441214292211_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Rke4D6EMAxQAX_WFhU-&_nc_oc=AdhWo75wgVADGebFyCW78q7laJR0_WsmCaiMbQq_p0LO03DSDy5IfprRBnvraVtnuWbfdazXzRz31WXymwidCugu&_nc_ht=scontent.fuio1-1.fna&oh=00_AfCVSLOTf7iM-cPhpCWTkpDDFDmdOVisycWogrYZgxFw7Q&oe=6609AE0E"
+          alt="SUCRE-Logo"
+          title="Biblioteca - SUCRE-Logo"
+        />
+        <h2>Inicia Sesión</h2>
+        <div class="form">
+          <form action="" method="post">
+            <div class="user">
+              <input
+                type="text"
+                name="user"
+                placeholder="Nombre de usuario"
+                id="id-user"
+              />
+              <div class="information-user" id="alert-user">
+                <p>Recuerde que el usuario es su número de cédula.</p>
+              </div>
+            </div>
+            <div class="password">
+              <input
+                type="password"
+                name="password"
+                placeholder="Contraseña"
+                id="password-user"
+              />
+              <div class="information-password" id="alert-password">
+                <p>
+                  La contraseña debe tener un mínimo de 4 hasta un máximo de 12
+                  caracteres.
+                </p>
+              </div>
+            </div>
+            <!-- <div class="lost-password">
+              <span>Olvidaste la contraseña?</span
+              ><a href="forgot_password.html">Haz click aquí</a>
+            </div> -->
+            <div id="div-alert" class="alert"></div>
+            <button id="btn-login" type="submit">Acceder</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/js/login.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Admin Dashboard | Korsat X Parmaga</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <li id="title-for-user"></li>
+
+          <li>
+            <a href="dashboard.html">
+              <span class="icon">
+                <ion-icon name="home-outline"></ion-icon>
+              </span>
+              <span class="title">Dashboard</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="dashboard-user.html">
+              <span class="icon">
+                <ion-icon name="people-outline"></ion-icon>
+              </span>
+              <span class="title">Usuarios</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="dashboard-books.html">
+              <span class="icon">
+                <ion-icon name="book-outline"></ion-icon>
+              </span>
+              <span class="title">Libros</span>
+            </a>
+          </li>
+
+          <!-- <li>
+            <a href="#">
+              <span class="icon">
+                <ion-icon name="help-outline"></ion-icon>
+              </span>
+              <span class="title">Help</span>
+            </a>
+          </li> -->
+
+          <li>
+            <a href="#">
+              <span class="icon">
+                <ion-icon name="settings-outline"></ion-icon>
+              </span>
+              <span class="title">Configuración</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="fpdf/PruebaV.php" target="_blank">
+              <span class="icon">
+                <ion-icon name="clipboard-outline"></ion-icon>
+              </span>
+              <span class="title">Reportes</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="assets/php/logout.php">
+              <span class="icon">
+                <ion-icon name="log-out-outline"></ion-icon>
+              </span>
+              <span class="title">Sign Out</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ========================= Main ==================== -->
+      <div class="main">
+        <div class="topbar">
+          <div class="toggle">
+            <ion-icon name="menu-outline"></ion-icon>
+          </div>
+
+          <div class="user" id="nombre-for-user"></div>
+        </div>
+
+        <!-- ======================= Cards ================== -->
+        <div class="box-info">
+          <div class="box-title">
+            <h2>Información del Usuario</h2>
+          </div>
+          <div class="box-body" id="box-body-info"></div>
+        </div>
+
+        <!-- ================ Button Change Password ================= -->
+        <div class="box-info">
+          <div class="box-title">
+            <h2>Cambiar la contraseña</h2>
+          </div>
+          <div class="box-button">
+            <button class="btn btn-change-password">Nueva Contraseña</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- =============== Modal ================ -->
+      <div class="modal-settings">
+        <div class="modal-container">
+          <ion-icon class="modal-icon" name="close"></ion-icon>
+          <h1 class="modal-title">Cambio de contraseña</h1>
+          <form class="modal-form">
+            <div class="modal-password">
+              <input
+                type="text"
+                placeholder="Ingrese la contraseña"
+                id="password"
+              />
+            </div>
+            <div class="modal-change-password">
+              <input
+                type="text"
+                placeholder="Ingrese la nueva contraseña"
+                id="new-password"
+              />
+            </div>
+            <div class="modal-repeat-change-password">
+              <input
+                type="text"
+                placeholder="Repita la nueva contraseña"
+                id="repeat-new-password"
+              />
+            </div>
+            <div class="modal-text-repeat-password">
+              <p>
+                <ion-icon
+                  class="icon-alert"
+                  name="alert-circle-outline"
+                ></ion-icon>
+                Las contraseñas no coinciden
+              </p>
+              <ion-icon class="icon-close" name="close"></ion-icon>
+            </div>
+            <div class="modal-text-incomplete-box">
+              <p>
+                <ion-icon
+                  class="icon-alert"
+                  name="alert-circle-outline"
+                ></ion-icon>
+                Necesita llenar todos los campos.
+              </p>
+              <ion-icon class="icon-close" name="close"></ion-icon>
+            </div>
+            <div class="modal-text-error-password">
+              <p>
+                <ion-icon
+                  class="icon-alert"
+                  name="alert-circle-outline"
+                ></ion-icon>
+                No coincide la contraseña actual.
+              </p>
+              <ion-icon class="icon-close" name="close"></ion-icon>
+            </div>
+            <div class="modal-text-ok">
+              <div class="temporal"></div>
+              <ion-icon class="icon-close" name="close"></ion-icon>
+            </div>
+            <button class="modal-button" type="submit">Confirmar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- =========== Scripts =========  -->
+    <script src="assets/js/information_user.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="assets/js/controller_dashboard_settings.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
